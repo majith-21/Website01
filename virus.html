@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body{
+    background-color: lightblue;
+  }
+  .container {
+
+    margin: 20px;
+  }
+button{
+  height: 28px;
+  color: red;
+  background-color: white;
+  border: 1px solid red;
+  border-radius: 5px;
+  
+}
+
+  .one {
+    height: 24px;
+    width: 24px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 25px;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    display: flex;
+  }
+.one1{
+  height: 24px;
+    width: 24px;
+    background-color: gray;
+    border-radius: 25px;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(82, 79, 79);
+    display: flex;
+}
+  .line1,
+  .line2 {
+    background-color: red;
+    height: 40px;
+    width: 2px;
+    margin-left: 11px;
+  }
+.line2{
+  background-color: gray;
+}
+  .inp1 {
+    border-radius: 5px;
+    border: 1px solid rgb(170, 168, 163);
+    height: 25px;
+    transition: background-color 0.8s;
+  }
+
+ 
+
+  .inp1:hover {
+    background-color: rgb(235, 240, 235);
+  }
+
+  .p1 {
+    margin-left: 19px;
+    color: rgb(10, 10, 10);
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+  }
+  .hidden{
+    display: none;
+  }
+  .img{
+    margin-left: 150px;
+    width: 60em;
+
+  }
+  .all{
+    margin-left: 480px;
+    margin-top: 40px;
+  }
+
+</style>
+
+<body>
+  <img src="https://tecroot.lk/wp-content/uploads/2023/02/TecRoot_Logo_Horizontal_2-e1675356582242.png" alt="TecRoot" class="img" width="200" height="100">
+  <div class="all">
+    <div class="input">
+      <input class="inp1" type="text" name="" id="" placeholder=" Type HBL ">
+      <button class="Track">Track HBL</button>
+    </div>
+  
+    <div class="container">
+      <div>
+        <label class="HBL">HBL Number : </label>
+      </div>
+  
+  <div class="main">
+    <div class="one">
+      <p>01</p>
+
+      <p class="p1"> 20.01.2024➡Processing................
+      </p>
+
+    </div>
+    <div class="line1">
+    </div>
+    <div class="one">
+      <p>02</p>
+
+      <p class="p1"> 22.01.2024➡Assigned to Driver
+      </p>
+
+    </div>
+    <div class="line1">
+    </div>
+    <div class="one">
+      <p>03</p>
+
+      <p class="p1"> 24.01.2024➡OnTheWay🚛
+      </p>
+
+    </div>
+    <div class="line1">
+    </div>
+    <div class="one">
+      <p>04</p>
+
+      <p class="p1"> 25.01.2024➡Parcel Reached Destination🏠
+      </p>
+
+    </div>
+    <div class="line1">
+    </div>
+    <div class="one1">
+      <p>05</p>
+
+      <p class="p1"> 26.01.2024➡Custom Clearence.............📦
+      </p>
+
+    </div>
+    <div class="line2">
+    </div>
+    <div class="one1">
+      <p>06</p>
+
+      <p class="p1"> 27.01.2024➡Ready For Collection......
+      </p>
+
+    </div>
+    <div class="line2">
+    </div>
+    <div class="one1">
+      <p>07</p>
+
+      <p class="p1"> 28.01.2024➡Customer Recived the📦
+
+    </div>
+    <div class="line2">
+    </div>
+    <div class="one1">
+      <p>08</p>
+
+      <p class="p1">ThankYou
+      </p>
+
+    </div>
+  </div>
+      
+      
+  
+  
+  
+  
+    </div>
+  </div>
+  <script>
+const hblLabel = document.querySelector('.HBL');
+const trackButton = document.querySelector('.Track');
+const inputField = document.querySelector('.inp1');
+const hide = document.querySelector('.container');
+
+hide.classList.add('hidden');
+trackButton.addEventListener('click', function(){
+  const hblNumber = inputField.value;
+  hblLabel.textContent = "HBL Number: " + hblNumber; 
+  hide.classList.remove('hidden')
+
+
+});
+
+
+
+  </script>
+</body>
+
+</html>
